@@ -8,6 +8,8 @@ import org.springframework.graphql.data.method.annotation.MutationMapping
 import org.springframework.graphql.data.method.annotation.QueryMapping
 import org.springframework.security.access.annotation.Secured
 import org.springframework.security.access.prepost.PreAuthorize
+import org.springframework.security.config.Customizer
+import org.springframework.security.config.annotation.method.configuration.EnableReactiveMethodSecurity
 import org.springframework.security.config.web.server.ServerHttpSecurity
 import org.springframework.security.config.web.server.ServerHttpSecurity.AuthorizeExchangeSpec
 import org.springframework.security.config.web.server.ServerHttpSecurity.CsrfSpec
@@ -17,10 +19,6 @@ import org.springframework.security.web.server.SecurityWebFilterChain
 import org.springframework.stereotype.Controller
 import org.springframework.stereotype.Service
 import reactor.core.publisher.Mono
-import org.springframework.security.config.Customizer;
-import org.springframework.security.config.annotation.method.configuration.EnableReactiveMethodSecurity
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.RestController
 import java.util.concurrent.atomic.AtomicInteger
 
 @EnableReactiveMethodSecurity
