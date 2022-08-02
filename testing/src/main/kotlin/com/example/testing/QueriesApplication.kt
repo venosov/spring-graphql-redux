@@ -1,4 +1,4 @@
-package com.example.queries
+package com.example.testing
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
